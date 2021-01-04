@@ -94,4 +94,32 @@ public class stepDefinitions {
         //assertEquals(js.getString(arg0), arg1);
         //throw new PendingException();
     }
+
+    // For Scenario 2
+
+
+    @RunWith(Cucumber.class)
+    public class MyStepDefinitions {
+
+        @Given("^Place ID is available$")
+        public void place_id_is_available() throws Throwable {
+            throw new PendingException();
+        }
+
+        @When("^User calls AddPlaceAPI with GET http request$")
+        public void user_calls_addplaceapi_with_get_http_request() throws Throwable {
+            throw new PendingException();
+        }
+
+        @Then("^The API call is sucessful with status code 200$")
+        public void the_api_call_is_sucessful_with_status_code_200() throws Throwable {
+            throw new PendingException();
+        }
+
+        @And("^reponse body retrieves the data$")
+        public void reponse_body_retrieves_the_data() throws Throwable {
+            throw new PendingException();
+        }
+
+    }
 }
