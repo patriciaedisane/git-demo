@@ -44,6 +44,8 @@ public class stepDefinitions {
     testDataBuild data = new testDataBuild();
 
 
+
+
     @Given("^Add Place Payload is available$")
     public void add_place_payload_is_available() throws Throwable {
         RestAssured.baseURI="https://rahulshettyacademy.com";
@@ -54,6 +56,9 @@ public class stepDefinitions {
         resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
         res = given().spec(req).body(data.addPlacePayLoad());
+
+        // Adding this line of code to see if it can be committed and pushed to Git
+        System.out.println("COMMIT THIS CODE");
         //System.out.println("hi" +res);
 
     }
